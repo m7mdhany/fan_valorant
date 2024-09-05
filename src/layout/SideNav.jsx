@@ -29,7 +29,7 @@ export default function SideNav() {
     <div className="z-50 h-12 w-full sticky overflow-x-clip">
       <div className=" bg-primDark  relative z-50 w-full h-12 text-white text-right p-2 text-3xl flex flex-row-reverse items-center gap-2" >
         <button className="w-fit z-50 text-primLight text-5xl px-7 bg-slate-700 bg-opacity-80" onClick={checker}>III</button>
-        <div className={`flex gap-3 ${vi} items-center !bg-primDark z-50`}>
+        <div className={`hidden md:flex gap-3 ${vi} items-center !bg-primDark z-50`}>
           <p>Welcome, {user}</p>
           <img src={userImg} className="border w-10 h-10 rounded-full bg-slate-300" alt="" />
         </div>
@@ -45,9 +45,12 @@ export default function SideNav() {
         </div>
       </div>
       <div className={` absolute w-80 h-fit bg-gradient-to-b from-primDark from-50%  to-SecDark py-5 px-2 z-40 -right-80 ${postion}`}>
-        <img src="" alt="" />
-        <div className="flex justify-end">
-          <Link to='/login' className="text-white text-xl py-1 px-7 rounded-sm bg-SecLight" >{log}</Link>
+        <div className="flex justify-between md:justify-end px-2">
+          <div className={`flex md:hidden gap-3 ${vi} items-center !bg-primDark z-50`}>
+            <p className="text-white text-2xl">Welcome, {user}</p>
+            <img src={userImg} className="border w-10 h-10 rounded-full bg-slate-300" alt="" />
+          </div>
+          <Link to='/login' className="text-white text-xl py-1 px-7 rounded-sm bg-SecLight min-w-fit h-10" >{log}</Link>
         </div>
         <div className="flex text-white text-2xl gap-2 w-full flex-col ">
           <Link className='flex justify-center items-center hover:border-b border-SecLight hover:bg-gray-800 rounded-md w-full h-16 cursor-not-allowed'>Summary</Link>
