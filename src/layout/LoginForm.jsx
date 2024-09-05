@@ -14,10 +14,10 @@ export default function LoginForm() {
 
 
 	const handle_user = () => {
-		console.log(userInput.current.value)
-		dispatch(change_user(userInput.current.value))
+		if (userInput.current.value !== '') {
+			dispatch(change_user(userInput.current.value))
+		}
 	};
-
 
 	return (
 		<div
