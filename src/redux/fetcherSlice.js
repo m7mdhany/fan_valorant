@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import GearDetails from '../components/Gear/GearDetails'
 const fetcherSlice = createSlice({
   name: 'fetcherSlice',
   initialState: {

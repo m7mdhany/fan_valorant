@@ -137,9 +137,9 @@ export default function Agents() {
   }
 
   return (
-    <div className={`${styles.agents_bg}  bg-fixed bg-center min-h-screen pb-2 `}>
+    <div className={`${styles.agents_bg}  bg-fixed bg-center min-h-screen pb-2`}>
       <ResposiveNav />
-      <div className={`h-fit xl:p-20 pt-20 text-center md:text-start`}>
+      <div className={`h-fit xl:p-20 pt-20 text-center md:text-start  `}>
         <h1 className=" md:ml-20 text-7xl font-bold text-white">AGENTS</h1>
         <button className="lg:hidden block md:ml-20 mb-5 m-auto border text-2xl px-2 rounded-sm bg-SecDark text-white" onClick={() => { switcher() }} >Switch Icons</button>
         <div className=" flex flex-col md:flex-row justify-betweens m-auto items-start gap-1 mb-5 w-5/6">

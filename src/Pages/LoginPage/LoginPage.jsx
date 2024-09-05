@@ -4,26 +4,31 @@ import { useEffect, useState } from "react";
 import Valo from '../../Assets/Imgs/valo-word-br-bk.png'
 import Valo2 from '../../Assets/Imgs/valo-word-wh.png'
 // import Valo3 from '../../assets/Imgs/bg-lines-test.png'
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { change_userImg } from "../../redux/userSlice";
 export default function LoginPage() {
 
 	const [agent, setAgent] = useState([]);
 	const [counter, setCounter] = useState(1);
 	const { agents } = useSelector(store => store.fetcherSlice);
+	const { userImg } = useSelector(store => store.userSlice);
 	const navigate = useNavigate();
+	const dispatch = useDispatch()
 
 	useEffect(() => {
 		if (agents === null) {
 		} else {
 			let num = Math.floor(Math.random() * (agents.length - 1))
 			setAgent(agents[num])
+			dispatch(change_userImg(agents[num].displayIcon))
 		}
 	}, [agents]);
 
 	let changer = () => {
 		let num = Math.floor(Math.random() * (agents.length - 1))
 		setAgent(agents[num])
+		dispatch(change_userImg(agents[num].displayIcon))
 	};
 
 	return (

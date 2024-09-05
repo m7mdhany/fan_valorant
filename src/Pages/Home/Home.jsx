@@ -85,7 +85,7 @@ export default function Home() {
 
       {/* -------Agents---------- */}
 
-      <div div className={`${styles.bgAgents} flex flex-col items-center md:flex-row md:items-start bg-center bg-cover text-white h-fit md:h-[30rem] z-20`}>
+      <div className={`${styles.bgAgents} flex flex-col items-center md:flex-row md:items-start bg-center bg-cover text-white h-fit md:h-[30rem] z-20`}>
         <div className="xsm:hidden xsm:w-5/6 md:block lg:w-4/6 xl:w-5/6 flex justify-center items-center relative">
           <div className="m-24 h-[40rem] w-[0.1rem] bg-slate-200 z-30" data-aos='fade-right' data-aos-offset='500' data-aos-duration='500'></div>
           <img className="md:absolute lg:top-0 md:top-12 xl:right-20" src={Agents} alt=""
