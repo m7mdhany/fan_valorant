@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+
+:root {
+	--main-color: #ff4655;
+	--main-color-light: #ff6c78;
+	--secondry-bg: #eae4ea;
+	--main-bg: #131f2a;
+	--main-bg-ligt: #414f5d;
+	--font: "Teko", sans-serif;
+}
+*{
+  transition: all 0.1s;
+}
+h1,div,p,span {
+	font-family: var(--font);
+}

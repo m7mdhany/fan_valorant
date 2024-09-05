@@ -1,0 +1,13 @@
+.main_page {
+  background-color: var(--main-color);
+  height: 100vh;
+}
+
+.wh {
+  min-width: 800px;
+  min-height: 700px;
+}
+
+.bg {
+  background-image: url('../../Assets/Imgs/bg-lines-test.png');
+}

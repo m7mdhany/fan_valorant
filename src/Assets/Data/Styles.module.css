@@ -1,0 +1,29 @@
+.bgGif {
+  /* background-image: url(../../Assets/gif/valo-bg-gif.gif); */
+  background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTJsMjRsOHY3ZmZ0aHB2MGU2eXpsdXF4N3d3cWJrZnQ3NGV3NWlrMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lsQe5IXw9S2rMw99YL/giphy.gif');
+}
+
+.bgBody {
+  background-color: rgba(255, 255, 255, 0.826);
+  background-image: url(../../Assets/Imgs/bg.jpg);
+}
+
+.bgVideo {
+  background-image: url(../../Assets/Imgs/bg-lines.png);
+}
+
+.bgAgents {
+  background-image: url(../../Assets/Imgs/valo-bg-double-flip.jpg);
+}
+
+.bgGear {
+  background-image: url(../../Assets/Imgs/gear-1.jpg);
+}
+
+.bgMap {
+  background-image: url(../../Assets/Imgs/map-bg.png);
+}
+
+.agents_bg {
+  background-image: url(../../Assets/Imgs/bg-lines.png);
+}
