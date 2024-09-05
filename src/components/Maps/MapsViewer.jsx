@@ -34,7 +34,7 @@ export default function MapsViewer() {
           <img className="max-h-full m-auto" src={map?.splash} alt="" />
         </SwiperSlide>
         <SwiperSlide className=" !flex items-center">
-          <img className="bg-white bg-opacity-25 max-h-full m-auto border" src={map?.displayIcon} alt="" />
+          <img className="bg-white bg-opacity-25 max-h-full m-auto" src={map?.displayIcon} alt="" />
         </SwiperSlide>
       </Swiper>
       <p className="text-white text-center text-3xl ">Map description</p>
