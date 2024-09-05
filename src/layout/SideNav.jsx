@@ -44,8 +44,8 @@ export default function SideNav() {
           </div>
         </div>
       </div>
-      <div className={` absolute w-80 h-fit bg-gradient-to-b from-primDark from-50%  to-SecDark py-5 px-2 z-40 -right-80 ${postion}`}>
-        <div className="flex justify-between md:justify-end px-2">
+      <div className={` absolute w-80 pt-14 h-fit bg-gradient-to-b from-primDark from-50%  to-SecDark py-5 px-2 z-40 -right-80 ${postion}`}>
+        <div className="flex flex-wrap justify-between md:justify-end px-2">
           <div className={`flex md:hidden gap-3 ${vi} items-center !bg-primDark z-50`}>
             <p className="text-white text-2xl">Welcome, {user}</p>
             <img src={userImg} className="border w-10 h-10 rounded-full bg-slate-300" alt="" />
